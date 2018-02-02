@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Add to your `deploy.rb`
 
-```
+```ruby
 require 'mina-dox'
 ```
 
@@ -35,7 +35,7 @@ set :dox_path, "api/#{fetch(:dox_version)}/docs"
 
 ## Tasks
 
-```
+```ruby
 :dox:generate # Assumes you have a rake task called 'dox:html'
 :dox:publish  # Publishes the generated docs
 ```
@@ -43,7 +43,7 @@ set :dox_path, "api/#{fetch(:dox_version)}/docs"
 ## Dox generating task:
 
 Example:
-```
+```ruby
 namespace :dox do
   task :md, [:version, :docs_path, :host] do |_, args|
     require 'rspec/core/rake_task'
@@ -89,7 +89,7 @@ end
 
 can be used as:
 
-```
+```sh
 rake 'api:doc:html[v1, api/v1/docs, https://production.byinfinum.co]'
 ```
 
