@@ -1,5 +1,5 @@
 set :dox_version, 'v1'
-set :dox_path, -> { "api/#{fetch(:dox_version)}/dox" }
+set :dox_path, -> { "api/#{fetch(:dox_version)}/docs" }
 
 namespace :dox do
   task :generate do
