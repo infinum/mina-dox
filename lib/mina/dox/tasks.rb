@@ -18,7 +18,7 @@ namespace :dox do
     run(:local) do
       local_path = "public/#{fetch(:dox_path)}/index.html"
       remote_path = "#{fetch(:user)}@#{fetch(:domain)}:#{fetch(:current_path)}/public/#{fetch(:dox_path)}"
-      command "scp -P #{fetch(:port)} #{local_path} #{remote_path}"
+      command "scp -P #{fetch(:port)} #{fetch(:ssh_options)} #{local_path} #{remote_path}"
     end
   end
 end
