@@ -7,34 +7,32 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    diff-lcs (1.3)
-    mina (1.2.3)
-      open4 (~> 1.3.4)
+    diff-lcs (1.6.1)
+    mina (1.2.5)
       rake
-    open4 (1.3.4)
-    rake (10.5.0)
-    rspec (3.7.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-    rspec-core (3.7.1)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
+    rake (13.2.1)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.3)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.4)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-mocks (3.7.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.3)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-support (3.7.1)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler
   mina-dox!
-  rake (~> 10.0)
-  rspec (~> 3.0)
+  rake
+  rspec
 
 BUNDLED WITH
-   1.16.1
+   2.6.8
